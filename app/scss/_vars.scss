@@ -27,7 +27,15 @@ $bg: #f6f6f6;
   background-color: $accent;
   text-transform: uppercase;
   color: #fff;
-   padding: 12px 26px;
-   @extend %roboto-700;
-   box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+  padding: 12px 26px;
+  @extend %roboto-400;
+  box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+}
+
+@function max($number...) {
+  @return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
 }
