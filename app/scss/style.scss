@@ -191,6 +191,18 @@
   }
 }
 
+.top {
+  &__container {
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 120px 0 130px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
 .top-slider {
   background-image: url('../images/abstract.png');
   background-repeat: no-repeat;
@@ -661,7 +673,8 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       right: -30px;
@@ -678,12 +691,15 @@
     max-width: 370px;
     border: 1px solid #ececec;
     transition: all 0.3s;
-    &:hover{
+
+    &:hover {
       border: none;
       box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
-      .blog__item-link{
+
+      .blog__item-link {
         color: $accent;
-        &::after{
+
+        &::after {
           background-image: url('../images/icons/arrow-accent.svg');
         }
       }
@@ -741,7 +757,6 @@
     margin-bottom: 20px;
   }
 
-
   &__item-link {
     position: relative;
     transition: all 0.3s;
@@ -757,6 +772,60 @@
     }
   }
 
+}
+
+.modal {
+  max-width: 570px;
+  margin: 100px auto 115px;
+
+  &__links {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    color: #909090;
+    font-size: 22px;
+    @extend %roboto-400;
+    text-transform: uppercase;
+    margin: 0 30px;
+  }
+
+  &__link--active {
+    color: $accent;
+  }
+
+  &__label {
+    margin-bottom: 35px;
+    display: block;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: $bg;
+    margin-top: 5px;
+    height: 60px;
+    padding: 0 15px;
+  }
+ 
+  &__btn{
+    display: block;
+    background-color: $title;
+    text-transform: uppercase;
+    color: #fff;
+    @extend %roboto-400;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 12px;
+    height: 60px;
+  }
+   &__error{
+    color: $accent;
+    display: inline-block;
+ 
+  }
 }
 
 @import 'media';
