@@ -809,8 +809,8 @@
     height: 60px;
     padding: 0 15px;
   }
- 
-  &__btn{
+
+  &__btn {
     display: block;
     background-color: $title;
     text-transform: uppercase;
@@ -821,11 +821,16 @@
     margin-bottom: 12px;
     height: 60px;
   }
-   &__error{
+
+  &__error {
     color: $accent;
     display: inline-block;
- 
+  }
+
+  &__text {
+    margin-bottom: 25px;
   }
 }
+
 
 @import 'media';
