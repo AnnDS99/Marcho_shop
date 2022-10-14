@@ -63,3 +63,18 @@
     line-height: 20px;
   }
 }
+
+@media (max-width: 1200px) {
+  .header {
+    &__inner {
+      padding-right: 10px;
+    }
+  }
+}
+  @media (max-width: 860px) {
+    .menu {
+      &__list {
+        display: none;
+      }
+    }
+  }
