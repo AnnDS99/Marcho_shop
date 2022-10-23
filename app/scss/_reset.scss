@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  // scroll-behavior: smooth;
 }
 
 *,
@@ -9,11 +9,15 @@ html {
   box-sizing: inherit;
 }
 
-
-ul [class],
-ol [class] {
+ul,
+ol {
   padding: 0;
-}
+} 
+
+// ul [class],
+// ol [class] {
+//   padding: 0;
+// }
 
 body,
 h1,
